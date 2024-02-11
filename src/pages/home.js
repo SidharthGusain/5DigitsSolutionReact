@@ -2298,7 +2298,7 @@ export default function Home() {
             <div className="col-lg-12">
               <Swiper
                 pagination={pagination}
-                // autoplay={autoplay}
+                autoplay={autoplay}
                 modules={[Autoplay, Pagination]}
                 className="swiper myDesignSwiper"
               >
