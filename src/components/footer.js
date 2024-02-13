@@ -31,7 +31,7 @@ export default function Footer() {
                 <Link to="/" onClick={scrollToTop}>Home</Link>
               </li>
               <li>
-                <Link to="/about" onClick={scrollToTop}>About</Link>
+                <Link to="/about" onClick={scrollToTop}>About Us</Link>
               </li>
               <li>
                 <Link to="#">Request a Quote</Link>

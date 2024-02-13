@@ -25,7 +25,7 @@ export default function Header() {
             </li>
             <li>
               <Link to="/about" className="nav-link" onClick={scrollToTop}>
-                About
+                About Us
               </Link>
             </li>
           </ul>
@@ -72,7 +72,7 @@ export default function Header() {
                       className="nav-link"
                       onClick={scrollToTop}
                     >
-                      About
+                      About Us
                     </Link>
                   </li>
                 </ul>
