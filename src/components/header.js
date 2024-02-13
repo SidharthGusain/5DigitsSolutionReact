@@ -3,10 +3,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-
   // scroll to top
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
 
   return (
@@ -17,7 +16,27 @@ export default function Header() {
             <span className="fa fa-xmark js-menu-toggle"></span>
           </div>
         </div>
-        <div className="site-mobile-menu-body"></div>
+        <div className="site-mobile-menu-body">
+          <ul className="site-nav-wrap">
+            <li>
+              <Link to="/" className="nav-link" onClick={scrollToTop}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="nav-link" onClick={scrollToTop}>
+                About
+              </Link>
+            </li>
+          </ul>
+          <ul className="site-nav-wrap">
+            <li className="cta">
+              <Link to="#" className="nav-link" onClick={scrollToTop}>
+                <span>Request a quote</span>
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <header
@@ -48,7 +67,11 @@ export default function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/about" className="nav-link" onClick={scrollToTop}>
+                    <Link
+                      to="/about"
+                      className="nav-link"
+                      onClick={scrollToTop}
+                    >
                       About
                     </Link>
                   </li>

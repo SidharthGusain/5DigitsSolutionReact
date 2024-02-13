@@ -111,6 +111,9 @@ header.shrink .site-logo img {
   background: var(--secondary-color);
   padding-top: 10rem;
   padding-bottom: 7rem;
+  /* background-image: url('../images/bg-cloud.png');
+  background-size: cover;
+  background-repeat: no-repeat; */
 }
 
 #design-process-section {
@@ -726,6 +729,27 @@ header.shrink .site-logo img {
   font-size: 1.5rem;
 }
 
+
+/* 404 page */
+.page_404_header {
+  height:108.484px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/hero-aurora.jpg');
+}
+.page_404 {
+  height: calc(100vh - 108.484px);
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  
+}
+.four_zero_four_bg {
+  background-image: url('https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif');
+    height: 400px;
+    background-position: center;
+}
+
 @media (min-width: 992px) {
   header .site-logo img {
     max-width: 110px;
@@ -932,6 +956,13 @@ header.shrink .site-logo img {
   .our_tech_swiper .swiper-image {
     display: none;
   }
+
+  .page_404_header {
+    height:96.4688px;
+  }
+  .page_404 {
+    height: calc(100vh - 96.4688px);
+  }
 }
 
 @media (max-width: 576px) {
@@ -980,6 +1011,10 @@ header.shrink .site-logo img {
     height: 300px !important;
   }
 
+  .mobile-overflow-hidden {
+    overflow: hidden;
+  }
+
   .about-subtitle,
   .myDesignSwiper .swiper-slide h2 {
     font-size: 1.2rem;
@@ -990,7 +1025,7 @@ header.shrink .site-logo img {
   }
 
   .myDesignSwiper .swiper-wrapper {
-    padding-top: 0; 
+    padding-top: 2rem; 
   }
 
   #about-section img {
@@ -1008,10 +1043,11 @@ header.shrink .site-logo img {
   }
 
   .design-swiper-pagination .swiper-pagination-bullet {
-    width: 2.5rem;
-    height: 2.5rem;
-    line-height: 2.5rem;
-    font-size: 0.8rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px #9bb8df, 0 0 0 5px #fff;
   }
 
   .footer-section p {
@@ -1114,5 +1150,11 @@ header.shrink .site-logo img {
   }
   .our_value__subtitle {
     font-size: 1.3rem;
+  }
+  .page_404_header {
+    height:77.9062px;
+  }
+  .page_404 {
+    height: calc(100vh - 77.9062px);
   }
 }

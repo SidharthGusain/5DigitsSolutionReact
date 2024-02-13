@@ -4,6 +4,8 @@ import Home from "./pages/home";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import About from "./pages/about";
+import NoPage from "./pages/nopage";
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,19 +13,20 @@ import {
   useNavigate,
 } from "react-router-dom";
 
+
 function App() {
   return (
     <div className="site-wrap" id="main">
-      <Router>
-        <Header />
+        <Router>
+          <Header />
 
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
-        </Routes>
-
-        <Footer />
-      </Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<NoPage />} />
+          </Routes>
+          <Footer />
+        </Router>
     </div>
   );
 }

@@ -1676,7 +1676,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="site-section py-10" id="about-section">
+      <div className="site-section py-10 mobile-overflow-hidden" id="about-section">
         <div className="container">
           <div className="row mb-5 justify-content-center">
             <div
